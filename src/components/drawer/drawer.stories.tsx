@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { useArgs } from "@storybook/preview-api";
 import { TypographyLead } from "@/components/typography";
-import * as Drawer from "@/components/drawer";
+import { Drawer, DrawerRootProps } from "@/components/drawer";
 
 const meta = {
   title: "Drawer",
@@ -44,7 +44,7 @@ const meta = {
       </Drawer.Root>
     );
   },
-} satisfies Meta<Drawer.DrawerRootProps>;
+} satisfies Meta<DrawerRootProps>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

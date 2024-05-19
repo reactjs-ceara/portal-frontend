@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import * as Popover from "@/components/popover";
+import { Popover, PopoverRootProps } from "@/components/popover";
 import { Button } from "@/components/button";
 
 const meta = {
@@ -30,7 +30,7 @@ const meta = {
       </Popover.Root>
     );
   },
-} satisfies Meta<Popover.PopoverProps>;
+} satisfies Meta<PopoverRootProps>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
